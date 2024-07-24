@@ -1,6 +1,4 @@
-Here's a README for your "prepgarten-Website" GitHub repository:
 
----
 
 # Prepgarten Website
 
