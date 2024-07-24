@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body{
+        background-color: beige;
+        text-decoration: solid;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+        color: #842b2b;
+    }
+    .shape{
+        margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+    }
+.square {
+  height: 10em;
+  width: 10em;
+  background-color: rgb(91, 91, 227);
+
+}
+.circle {
+  height: 10em;
+  width: 10em;
+  background-color: #d90a75;
+  border-radius: 50%;
+}
+.rectangle {
+  height: 10em;
+  width: 15em;
+  background-color: #a826b2;
+}
+.oval {
+  height:10em;
+  width:15em;
+  background-color: #5aa90b;
+  border-radius: 50%;
+}
+.parallelogram {
+	width: 15em;
+	height: 10em;
+	transform: skew(20deg);
+	background: #42b5b1;
+}
+.trapezoid {
+	border-bottom: 10em solid #afa534;
+	border-left: 5em solid transparent;
+	border-right: 5em solid transparent;
+	height: 0;
+	width: 125px;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 10em solid transparent;
+	border-right:10em solid transparent;
+	border-bottom: 10em solid #842b2b;
+}
+</style>
+</head>
+<body>
+    <h1>Learn shapes 🔺🔹🟣</h1>
+
+<div class="shape">
+    
+<h2>Square</h2>
+<div class="square" onclick="playSound('square');"></div>
+
+<h2>Circle</h2>
+<div class="circle" onclick="playSound('circle');"></div>
+
+<h2>Rectangle</h2>
+<div class="rectangle" onclick="playSound('rectangle');"></div>
+
+<h2>Oval</h2>
+<div class="oval" onclick="playSound('oval');"></div>
+
+<h2>Parallelogram</h2>
+<div class="parallelogram" onclick="playSound('parallelogram');"></div>
+
+<h2>Trapezoid</h2>
+<div class="trapezoid " onclick="playSound('trapezoid');"></div>
+
+<h2>Triangle Up</h2>
+<div class="triangle" onclick="playSound('triangle');"></div>
+
+</div>
+
+<script>
+    function playSound(word) {
+      
+      const utterance = new SpeechSynthesisUtterance(word);
+      speechSynthesis.speak(utterance);
+  }
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,88 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for button hover effect */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#fruitInfo {
+    margin-top: 20px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Slightly below its final position */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animation effect */
+}
+
+#fruitInfo img {
+    border-radius: 10px;
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #ffcc00;
+    
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 80%;
+    }
+
+    button {
+        width: 80%;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    #fruitInfo img {
+        max-width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

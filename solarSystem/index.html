@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="solar-system" >
+
+        <div class="sun"  data-name="Sun" data-fact="The Sun is the star at the center of the Solar System." onclick="playSound('sun');" ><p>sun</p></div>
+        <div class="orbit mercury-orbit"><div class="planet mercury" data-name="Mercury" data-fact="Mercury is the smallest planet in our Solar System." onclick="playSound('mercury');"><p>mercury</p></div></div>
+        <div class="orbit venus-orbit"><div class="planet venus" data-name="Venus" data-fact="Venus is the hottest planet in our Solar System." onclick="playSound('venus');"><p>venus</p></div></div>
+        <div class="orbit earth-orbit">
+            <div class="planet earth" data-name="Earth" data-fact="Earth is the only planet known to support life." onclick="playSound('earth');"><p>earth</p>
+                <div class="moon-orbit"><div class="moon" data-name="Moon" data-fact="The Moon is Earth's only natural satellite." onclick="playSound('moon');"></div></div>
+            </div>
+        </div>
+        <div class="orbit mars-orbit"><div class="planet mars" data-name="Mars" data-fact="Mars is known as the Red Planet." onclick="playSound('mars');"><p>mars</p></div></div>
+        <div class="orbit jupiter-orbit"><div class="planet jupiter" data-name="Jupiter" data-fact="Jupiter is the largest planet in our Solar System." onclick="playSound('jupiter');"><p>jupiter</p></div></div>
+        <div class="orbit saturn-orbit"><div class="planet saturn" data-name="Saturn" data-fact="Saturn is famous for its rings." onclick="playSound('saturn');"><p>saturn</p></div></div>
+        <div class="orbit uranus-orbit"><div class="planet uranus" data-name="Uranus" data-fact="Uranus rotates on its side." onclick="playSound('uranus');"><p>uranus</p></div></div>
+        <div class="orbit neptune-orbit"><div class="planet neptune" data-name="Neptune" data-fact="Neptune is the farthest planet from the Sun." onclick="playSound('neptune');"><p>neptune</p></div></div> 
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="object-name"></h2>
+            <p id="object-fact"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

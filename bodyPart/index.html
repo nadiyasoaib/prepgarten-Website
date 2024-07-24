@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Body Parts for Kids</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #35009e;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #35009e;
+         
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #35009e;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .body-parts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .body-part {
+            margin: 20px;
+            width: calc(25% - 40px);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .body-part img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .body-part h2 {
+            margin-top: 0;
+        }
+        .body-part p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .fact {
+            display: none;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .body-part:hover .fact {
+            display: block;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .body-part {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .body-part {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Human Body Parts</h1>
+        </div>
+        <div class="body-parts">
+            <div class="body-part" onclick="playSound('head');">
+                <img src="img/head.jpg" alt="Head">
+                <h2>Head</h2>
+                <p>The head is the top part of the body. It has eyes, nose, mouth, and ears.</p>
+               
+            </div>
+            <div class="body-part" onclick="playSound('eyes');">
+                <img src="img/eye.jpg" alt="Eyes">
+                <h2>Eyes</h2>
+                <p>The eyes are the organs that help us see.</p>
+               
+            </div>
+            <div class="body-part" onclick="playSound('nose');">
+                <img src="img/nose.jpg" alt="Nose">
+                <h2>Nose</h2>
+                <p>The nose is the organ that helps us smell.</p>
+               
+            </div>
+            <div class="body-part" onclick="playSound('mouth');">
+                <img src="img/mouth.jpg" alt="Mouth">
+                <h2>Mouth</h2>
+                <p>The mouth is the organ that helps us eat and talk.</p>
+               
+            </div>
+            <div class="body-part" onclick="playSound('ears');">
+                <img src="img/ear.jpg" alt="Ears">
+                <h2>Ears</h2>
+                <p>The ears are the organs that help us hear.</p>
+               
+            </div>
+            <div class="body-part" onclick="playSound('neck');">
+                <img src="img/neck.jpg" alt="Neck">
+                <h2>Neck</h2>
+                <p>The neck is the part of the body that connects the head to the body.</p>
+              
+            </div>
+            <div class="body-part" onclick="playSound('shoulder');">
+                <img src="img/shoulder.jpg" alt="Shoulders">
+                <h2>Shoulders</h2>
+                <p>The shoulders are the parts of the body that connect the arms to the body.</p>
+               
+            </div>
+            <div class="body-part" onclick="playSound('arms');">
+                <img src="img/arm.jpg" alt="Arms">
+                <h2>Arms</h2>
+                <p>The arms are the parts of the body that help us move and do things.</p>
+               
+            </div>
+            <div class="body-part" onclick="playSound('hands');">
+                <img src="img/hands.jpg" alt="Hands">
+                <h2>Hands</h2>
+                <p>The hands are the parts of the body that help us grasp and manipulate objects.</p>
+               
+            </div>
+
+            <div class="body-part" onclick="playSound('leg');">
+                <img src="img/leg.jpg" alt="Hands">
+                <h2>Leg</h2>
+                <p>The legs Keep the body stable and help in walking & running.</p>
+               
+            </div>
+
+            <div class="body-part" onclick="playSound('hair');">
+                <img src="img/hair.jpg" alt="Hands">
+                <h2>Hair</h2>
+                <p>The hair Protects against external factors.</p>
+               
+            </div>
+
+            <div class="body-part" onclick="playSound('teeth');">
+                <img src="img/teeth.jpg" alt="Hands">
+                <h2>Teeth</h2>
+                <p>Teeth help us to bite and chew our food.</p>
+               
+            </div>
+        </div>
+    </div>
+    <script>
+         function playSound(word) {
+      const utterance = new SpeechSynthesisUtterance(word);
+      speechSynthesis.speak(utterance);
+  }
+    </script>
+</body>
+</html>
