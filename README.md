@@ -69,4 +69,4 @@ Contributions are what makes the open-source community such an amazing place to 
 
 Nadiyasoaib - [nadiyasoaib@gmail.com] - [http://www.linkedin.com/in/nadiakamar14]
 
-Project Link: [https://github.com/nadiyasoaib/prepgarten-Website]
+Github page Link: [[https://github.com/nadiyasoaib/prepgarten-Website](https://nadiyasoaib.github.io/prepgarten-Website/)]
